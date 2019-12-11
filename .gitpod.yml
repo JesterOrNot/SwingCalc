@@ -3,8 +3,10 @@ image: gitpod/workspace-full-vnc
 # List the ports you want to expose and what to do when they are served. See https://www.gitpod.io/docs/43_config_ports/
 ports:
   - port: 6080
-  
-  - port: 39500
+    onOpen: open-preview
+  - port: 35900
+    onOpen: ignore
   - port: 5900
+    onOpen: ignore
 tasks:
   - init: gradle build
