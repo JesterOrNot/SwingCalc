@@ -3,12 +3,15 @@
  */
 package SwingCalc;
 
-public class App {
-    public String getGreeting() {
-        return "Hello world.";
-    }
+import java.awt.Color;
 
+import javax.swing.*;
+
+public class App {
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        JFrame frame = new JFrame("SwingCalc");
+        frame.setSize(500,500);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
     }
 }
